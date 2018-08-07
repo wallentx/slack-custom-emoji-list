@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Use this to resize images for slack
+
+IN=$1
+OUT=$2
+
+convert $IN -resize 128x128\> $OUT
