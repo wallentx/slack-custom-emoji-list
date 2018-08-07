@@ -1,100 +1,325 @@
-# slack-custom-emoji
-Because existing emoji lack sufficient dank
-
-[![Build Status](https://semaphoreci.com/api/v1/rolandburrows/slack-custom-emoji/branches/master/shields_badge.svg)](https://semaphoreci.com/rolandburrows/slack-custom-emoji)
-
-Continuous Integration confirms each file matches Slack upload requirements
-
-
-## Table o' Contents
-- [Default Slack Emoji](#default-slack-emoji)
-- [Other Resources Most Excellent](#other-resources-most-excellent)
-- [Custom Emoji Styleguide Suggestions](custom-emoji-styleguide-suggestions)
-- [Custom Emoji List](#custom-emoji-list)
-- [Custom Slackbot Responses](#custom-slackbot-responses)
-
------
-
-### Default Slack Emoji
-- [How to use Slack emoji](https://get.slack.help/hc/en-us/articles/202931348-Emoji-and-emoticons)
-- [Slack Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet/)
-
-### Other Resources Most Excellent
-- [Cult of the Party Parrot](http://cultofthepartyparrot.com/)
-- [Many Many Other Custom Emoji](https://slackmojis.com/)
-- [Custom Emoji Packs](http://www.emojipacks.com/)
-
-### Custom Emoji Styleguide Suggestions
-1. Format: `.png` to preserve transparency
-2. Background removed (turned transparent)
-3. Dimenions: 128px * 128px (even if emoji isn't) to preserve centering
-4. Less than 64kb in size
-5. Right-facing visual-direction (into whitespace)
-
-### Custom Emoji List
+# Custom Emoji List
 
 | Emoji | Suggested Text | Emoji | Suggested Text | Emoji | Suggested Text |
 |:-----:|:--------------:|:-----:|:--------------:|:-----:|:--------------:|
-| <img src="custom_emoji/aint-nobody-got-time-for-that.png" width="32" height="32"/> | :aint-nobody-got-time-for-that: | <img src="custom_emoji/air-quote-left.gif" width="32" height="32"/> | :air-quote-left: | <img src="custom_emoji/air-quote-right.gif" width="32" height="32"/> | :air-quote-right: |
-| <img src="custom_emoji/always-watching.png" width="32" height="32"/> | :always-watching: | <img src="custom_emoji/angry-skeletor.gif" width="32" height="32"/> | :angry-skeletor: | <img src="custom_emoji/aw-yiss.png" width="32" height="32"/> | :aw-yiss: |
-| <img src="custom_emoji/aww.png" width="32" height="32"/> | :aww: | <img src="custom_emoji/bat-signal.png" width="32" height="32"/> | :bat-signal: | <img src="custom_emoji/beavis.png" width="32" height="32"/> | :beavis: |
-| <img src="custom_emoji/bogs.png" width="32" height="32"/> | :bogs: | <img src="custom_emoji/butthead.png" width="32" height="32"/> | :butthead: | <img src="custom_emoji/coding-cowboy.gif" width="32" height="32"/> | :coding-cowboy: |
-| <img src="custom_emoji/cornholio.png" width="32" height="32"/> | :cornholio: | <img src="custom_emoji/derp.png" width="32" height="32"/> | :derp: | <img src="custom_emoji/disapproval.png" width="32" height="32"/> | :disapproval: |
-| <img src="custom_emoji/do-not-want.png" width="32" height="32"/> | :do-not-want: | <img src="custom_emoji/dolan-classic.png" width="32" height="32"/> | :dolan-classic: | <img src="custom_emoji/dolan.png" width="32" height="32"/> | :dolan: |
-| <img src="custom_emoji/failed.png" width="32" height="32"/> | :failed: | <img src="custom_emoji/feels-bad-man.png" width="32" height="32"/> | :feels-bad-man: | <img src="custom_emoji/feels-good-man.png" width="32" height="32"/> | :feels-good-man: |
-| <img src="custom_emoji/feels-good.png" width="32" height="32"/> | :feels-good: | <img src="custom_emoji/gooby.png" width="32" height="32"/> | :gooby: | <img src="custom_emoji/hmmm.png" width="32" height="32"/> | :hmmm: |
-| <img src="custom_emoji/hodor.png" width="32" height="32"/> | :hodor: | <img src="custom_emoji/i-guess-with-emphasis.png" width="32" height="32"/> | :i-guess-with-emphasis: | <img src="custom_emoji/i-guess.png" width="32" height="32"/> | :i-guess: |
-| <img src="custom_emoji/i-lied.png" width="32" height="32"/> | :i-lied: | <img src="custom_emoji/impossibru.png" width="32" height="32"/> | :impossibru: | <img src="custom_emoji/indeed.png" width="32" height="32"/> | :indeed: |
-| <img src="custom_emoji/lolwut.png" width="32" height="32"/> | :lolwut: | <img src="custom_emoji/magic-eight-ball.png" width="32" height="32"/> | :magic-eight-ball: | <img src="custom_emoji/mega-rage.png" width="32" height="32"/> | :mega-rage: |
-| <img src="custom_emoji/neutral.png" width="32" height="32"/> | :neutral: | <img src="custom_emoji/nice.png" width="32" height="32"/> | :nice: | <img src="custom_emoji/not-bad.png" width="32" height="32"/> | :not-bad: |
-| <img src="custom_emoji/one-does-not-simply.png" width="32" height="32"/> | :one-does-not-simply: | <img src="custom_emoji/rainbow-drool.png" width="32" height="32"/> | :rainbow-drool: | <img src="custom_emoji/ruhroh.png" width="32" height="32"/> | :ruhroh: |
-| <img src="custom_emoji/successful.png" width="32" height="32"/> | :successful: | <img src="custom_emoji/thatd-be-great.png" width="32" height="32"/> | :thatd-be-great: | <img src="custom_emoji/thats-what-i-like.png" width="32" height="32"/> | :thats-what-i-like: |
-| <img src="custom_emoji/this-is-fine.png" width="32" height="32"/> | :this-is-fine: | <img src="custom_emoji/tired-spongebob.png" width="32" height="32"/> | :tired-spongebob: | <img src="custom_emoji/troll-dance.gif" width="32" height="32"/> | :troll-dance: |
-| <img src="custom_emoji/troll-exclamation.png" width="32" height="32"/> | :troll-exclamation: | <img src="custom_emoji/troll-period.png" width="32" height="32"/> | :troll-period: | <img src="custom_emoji/troll-question.png" width="32" height="32"/> | :troll-question: |
-| <img src="custom_emoji/trollface-right.png" width="32" height="32"/> | :trollface-right: | <img src="custom_emoji/waiting-spongebob.gif" width="32" height="32"/> | :waiting-spongebob: | <img src="custom_emoji/wat.png" width="32" height="32"/> | :wat: |
-| <img src="custom_emoji/which-is-nice.png" width="32" height="32"/> | :which-is-nice: | <img src="custom_emoji/why-not-zoidberg.png" width="32" height="32"/> | :why-not-zoidberg: | <img src="custom_emoji/wtf.png" width="32" height="32"/> | :wtf: |
-| <img src="custom_emoji/yey.png" width="32" height="32"/> | :yey: | <img src="custom_emoji/you-cant-if-you-dont.png" width="32" height="32"/> | :you-cant-if-you-dont: |
-
-
-
-### Custom Slackbot Responses
-
-#### [Magic 8-Ball](https://en.wikipedia.org/wiki/Magic_8-Ball)
-
-<table style="width:100%">
-  <tr>
-    <th>When someone says</th>
-    <th>Slackbot responds with (randomly selects one)</th>
-  </tr>
-  <tr>
-    <td>:magic-eight-ball:</td>
-    <td>"It is certain"<br>
-        "It is decidedly so"<br>
-        "Without a doubt"<br>
-        "Yes definitely"<br>
-        "You may rely on it"<br>
-        "As I see it, yes"<br>
-        "Most likely"<br>
-        "Outlook good"<br>
-        "Yes"<br>
-        "Signs point to yes"<br>
-        "Reply hazy try again"<br>
-        "Ask again later"<br>
-        "Better not tell you now"<br>
-        "Cannot predict now"<br>
-        "Concentrate and ask again"<br>
-        "Don't count on it"<br>
-        "My reply is no"<br>
-        "My sources say no"<br>
-        "Outlook not so good"<br>
-        "Very doubtful"
-    </td>
-  </tr>
-</table>
-<table>
-  <tr>
-    <td>
-      <img src="slackbot_responses/magic-eight-ball-response.png" width="514"/>
-    </td>
-  </tr>
-</table>
+| <img src="custom_emoji/party_corgi.gif" width="32" height="32"/> | :party_corgi: | <img src="custom_emoji/residentsleeper.png" width="32" height="32"/> | :residentsleeper: | <img src="custom_emoji/thatd-be-great.png" width="32" height="32"/> | :thatd-be-great: |
+| <img src="custom_emoji/reeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.gif" width="32" height="32"/> | :reeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee: | <img src="custom_emoji/shame.jpg" width="32" height="32"/> | :shame: | <img src="custom_emoji/mexico.jpg" width="32" height="32"/> | :mexico: |
+| <img src="custom_emoji/yolo.png" width="32" height="32"/> | :yolo: | <img src="custom_emoji/poowalk.gif" width="32" height="32"/> | :poowalk: | <img src="custom_emoji/deefsmith.png" width="32" height="32"/> | :deefsmith: |
+| <img src="custom_emoji/dank.png" width="32" height="32"/> | :dank: | <img src="custom_emoji/quackers.png" width="32" height="32"/> | :quackers: | <img src="custom_emoji/xbox.jpg" width="32" height="32"/> | :xbox: |
+| <img src="custom_emoji/otto.png" width="32" height="32"/> | :otto: | <img src="custom_emoji/mtg-white.png" width="32" height="32"/> | :mtg-white: | <img src="custom_emoji/ha-ha.png" width="32" height="32"/> | :ha-ha: |
+| <img src="custom_emoji/skype_doh.gif" width="32" height="32"/> | :skype_doh: | <img src="custom_emoji/try-not-to-cry.gif" width="32" height="32"/> | :try-not-to-cry: | <img src="custom_emoji/dontpanic.jpg" width="32" height="32"/> | :dontpanic: |
+| <img src="custom_emoji/scumbag_tfl.png" width="32" height="32"/> | :scumbag_tfl: | <img src="custom_emoji/hermanmillerofficechair.jpg" width="32" height="32"/> | :hermanmillerofficechair: | <img src="custom_emoji/crunch.jpg" width="32" height="32"/> | :crunch: |
+| <img src="custom_emoji/kapkan_r6.png" width="32" height="32"/> | :kapkan_r6: | <img src="custom_emoji/melted_face.jpg" width="32" height="32"/> | :melted_face: | <img src="custom_emoji/coolcat2.png" width="32" height="32"/> | :coolcat2: |
+| <img src="custom_emoji/jager_r6.png" width="32" height="32"/> | :jager_r6: | <img src="custom_emoji/lacroix.jpg" width="32" height="32"/> | :lacroix: | <img src="custom_emoji/gary_the_snail.jpg" width="32" height="32"/> | :gary_the_snail: |
+| <img src="custom_emoji/bullwhip.png" width="32" height="32"/> | :bullwhip: | <img src="custom_emoji/bcuz.png" width="32" height="32"/> | :bcuz: | <img src="custom_emoji/ytho_jesus.jpg" width="32" height="32"/> | :ytho_jesus: |
+| <img src="custom_emoji/disapproval.png" width="32" height="32"/> | :disapproval: | <img src="custom_emoji/q.jpg" width="32" height="32"/> | :q: | <img src="custom_emoji/icwatudid.png" width="32" height="32"/> | :icwatudid: |
+| <img src="custom_emoji/parrotwave5.gif" width="32" height="32"/> | :parrotwave5: | <img src="custom_emoji/canary.jpg" width="32" height="32"/> | :canary: | <img src="custom_emoji/pppd.png" width="32" height="32"/> | :pppd: |
+| <img src="custom_emoji/blackmage.gif" width="32" height="32"/> | :blackmage: | <img src="custom_emoji/coolcoolcoolcoolcool.jpg" width="32" height="32"/> | :coolcoolcoolcoolcool: | <img src="custom_emoji/leftshark.gif" width="32" height="32"/> | :leftshark: |
+| <img src="custom_emoji/mindblown.gif" width="32" height="32"/> | :mindblown: | <img src="custom_emoji/hammertime.gif" width="32" height="32"/> | :hammertime: | <img src="custom_emoji/saturday.png" width="32" height="32"/> | :saturday: |
+| <img src="custom_emoji/mockingjay.png" width="32" height="32"/> | :mockingjay: | <img src="custom_emoji/ruhroh.png" width="32" height="32"/> | :ruhroh: | <img src="custom_emoji/nessded.gif" width="32" height="32"/> | :nessded: |
+| <img src="custom_emoji/grumpy_cat.jpg" width="32" height="32"/> | :grumpy_cat: | <img src="custom_emoji/tachanka_r6.png" width="32" height="32"/> | :tachanka_r6: | <img src="custom_emoji/oregon_back.jpg" width="32" height="32"/> | :oregon_back: |
+| <img src="custom_emoji/shebang.png" width="32" height="32"/> | :shebang: | <img src="custom_emoji/cera.png" width="32" height="32"/> | :cera: | <img src="custom_emoji/suspect.png" width="32" height="32"/> | :suspect: |
+| <img src="custom_emoji/firehose.jpg" width="32" height="32"/> | :firehose: | <img src="custom_emoji/zen.png" width="32" height="32"/> | :zen: | <img src="custom_emoji/butter.jpg" width="32" height="32"/> | :butter: |
+| <img src="custom_emoji/rightparrot.gif" width="32" height="32"/> | :rightparrot: | <img src="custom_emoji/rage4.png" width="32" height="32"/> | :rage4: | <img src="custom_emoji/party_parrot.gif" width="32" height="32"/> | :party_parrot: |
+| <img src="custom_emoji/sandstorm.png" width="32" height="32"/> | :sandstorm: | <img src="custom_emoji/platform_2_point_0_will_fix_this.png" width="32" height="32"/> | :platform_2_point_0_will_fix_this: | <img src="custom_emoji/first.png" width="32" height="32"/> | :first: |
+| <img src="custom_emoji/coconut.jpg" width="32" height="32"/> | :coconut: | <img src="custom_emoji/scotland.png" width="32" height="32"/> | :scotland: | <img src="custom_emoji/the_flying_dutchman.png" width="32" height="32"/> | :the_flying_dutchman: |
+| <img src="custom_emoji/excalibur.png" width="32" height="32"/> | :excalibur: | <img src="custom_emoji/thatcher_r6.png" width="32" height="32"/> | :thatcher_r6: | <img src="custom_emoji/aww.png" width="32" height="32"/> | :aww: |
+| <img src="custom_emoji/brain_enormous.jpg" width="32" height="32"/> | :brain_enormous: | <img src="custom_emoji/garlic.png" width="32" height="32"/> | :garlic: | <img src="custom_emoji/public_library.gif" width="32" height="32"/> | :public_library: |
+| <img src="custom_emoji/lmao.png" width="32" height="32"/> | :lmao: | <img src="custom_emoji/piratecat.gif" width="32" height="32"/> | :piratecat: | <img src="custom_emoji/katrina.png" width="32" height="32"/> | :katrina: |
+| <img src="custom_emoji/domo.png" width="32" height="32"/> | :domo: | <img src="custom_emoji/mtg_w.png" width="32" height="32"/> | :mtg_w: | <img src="custom_emoji/sbk.gif" width="32" height="32"/> | :sbk: |
+| <img src="custom_emoji/mine.png" width="32" height="32"/> | :mine: | <img src="custom_emoji/stegosaurus.jpg" width="32" height="32"/> | :stegosaurus: | <img src="custom_emoji/always-watching.png" width="32" height="32"/> | :always-watching: |
+| <img src="custom_emoji/shipit_parrot.gif" width="32" height="32"/> | :shipit_parrot: | <img src="custom_emoji/blessed.png" width="32" height="32"/> | :blessed: | <img src="custom_emoji/grimace.png" width="32" height="32"/> | :grimace: |
+| <img src="custom_emoji/snorlax.png" width="32" height="32"/> | :snorlax: | <img src="custom_emoji/datas.jpg" width="32" height="32"/> | :datas: | <img src="custom_emoji/william.png" width="32" height="32"/> | :william: |
+| <img src="custom_emoji/cubimal_chick.png" width="32" height="32"/> | :cubimal_chick: | <img src="custom_emoji/party_dumpsterfire.gif" width="32" height="32"/> | :party_dumpsterfire: | <img src="custom_emoji/degreemap_legacy.jpg" width="32" height="32"/> | :degreemap_legacy: |
+| <img src="custom_emoji/stone.jpg" width="32" height="32"/> | :stone: | <img src="custom_emoji/girneck.jpg" width="32" height="32"/> | :girneck: | <img src="custom_emoji/party_violence.jpg" width="32" height="32"/> | :party_violence: |
+| <img src="custom_emoji/rousey.png" width="32" height="32"/> | :rousey: | <img src="custom_emoji/bandaid.png" width="32" height="32"/> | :bandaid: | <img src="custom_emoji/pritunl.gif" width="32" height="32"/> | :pritunl: |
+| <img src="custom_emoji/c_sharp.jpg" width="32" height="32"/> | :c_sharp: | <img src="custom_emoji/gremlin.jpg" width="32" height="32"/> | :gremlin: | <img src="custom_emoji/corgi_parrot.gif" width="32" height="32"/> | :corgi_parrot: |
+| <img src="custom_emoji/bbq.jpg" width="32" height="32"/> | :bbq: | <img src="custom_emoji/makeitso.png" width="32" height="32"/> | :makeitso: | <img src="custom_emoji/triplets_parrot.gif" width="32" height="32"/> | :triplets_parrot: |
+| <img src="custom_emoji/snap.jpg" width="32" height="32"/> | :snap: | <img src="custom_emoji/pidgey.gif" width="32" height="32"/> | :pidgey: | <img src="custom_emoji/upset.png" width="32" height="32"/> | :upset: |
+| <img src="custom_emoji/nessheart.png" width="32" height="32"/> | :nessheart: | <img src="custom_emoji/m8.png" width="32" height="32"/> | :m8: | <img src="custom_emoji/coach.png" width="32" height="32"/> | :coach: |
+| <img src="custom_emoji/chupacabra.png" width="32" height="32"/> | :chupacabra: | <img src="custom_emoji/i-guess.png" width="32" height="32"/> | :i-guess: | <img src="custom_emoji/nelson.gif" width="32" height="32"/> | :nelson: |
+| <img src="custom_emoji/swingline.jpg" width="32" height="32"/> | :swingline: | <img src="custom_emoji/fiestaparrot.gif" width="32" height="32"/> | :fiestaparrot: | <img src="custom_emoji/wubba_lubba_dub_dub.jpg" width="32" height="32"/> | :wubba_lubba_dub_dub: |
+| <img src="custom_emoji/coffee_parrot.gif" width="32" height="32"/> | :coffee_parrot: | <img src="custom_emoji/homer_simpson_bush.gif" width="32" height="32"/> | :homer_simpson_bush: | <img src="custom_emoji/nuke.jpg" width="32" height="32"/> | :nuke: |
+| <img src="custom_emoji/sad.png" width="32" height="32"/> | :sad: | <img src="custom_emoji/bsod.png" width="32" height="32"/> | :bsod: | <img src="custom_emoji/longhorns.jpg" width="32" height="32"/> | :longhorns: |
+| <img src="custom_emoji/salt.png" width="32" height="32"/> | :salt: | <img src="custom_emoji/dealwithit.png" width="32" height="32"/> | :dealwithit: | <img src="custom_emoji/jbg.png" width="32" height="32"/> | :jbg: |
+| <img src="custom_emoji/trollface-right.png" width="32" height="32"/> | :trollface-right: | <img src="custom_emoji/schwarma.png" width="32" height="32"/> | :schwarma: | <img src="custom_emoji/scumbag_apple.png" width="32" height="32"/> | :scumbag_apple: |
+| <img src="custom_emoji/party_pika.gif" width="32" height="32"/> | :party_pika: | <img src="custom_emoji/mtg_c.png" width="32" height="32"/> | :mtg_c: | <img src="custom_emoji/waterbear.png" width="32" height="32"/> | :waterbear: |
+| <img src="custom_emoji/fox.png" width="32" height="32"/> | :fox: | <img src="custom_emoji/shot_glass.png" width="32" height="32"/> | :shot_glass: | <img src="custom_emoji/love.png" width="32" height="32"/> | :love: |
+| <img src="custom_emoji/db.png" width="32" height="32"/> | :db: | <img src="custom_emoji/pinky_promise.png" width="32" height="32"/> | :pinky_promise: | <img src="custom_emoji/scratch_head.gif" width="32" height="32"/> | :scratch_head: |
+| <img src="custom_emoji/takemymoney.png" width="32" height="32"/> | :takemymoney: | <img src="custom_emoji/slowpoke.gif" width="32" height="32"/> | :slowpoke: | <img src="custom_emoji/piggy.png" width="32" height="32"/> | :piggy: |
+| <img src="custom_emoji/troll-period.png" width="32" height="32"/> | :troll-period: | <img src="custom_emoji/wtf.png" width="32" height="32"/> | :wtf: | <img src="custom_emoji/canteven.png" width="32" height="32"/> | :canteven: |
+| <img src="custom_emoji/uff_da.jpg" width="32" height="32"/> | :uff_da: | <img src="custom_emoji/beer_pong.jpg" width="32" height="32"/> | :beer_pong: | <img src="custom_emoji/fine.png" width="32" height="32"/> | :fine: |
+| <img src="custom_emoji/ponyta.gif" width="32" height="32"/> | :ponyta: | <img src="custom_emoji/loading.gif" width="32" height="32"/> | :loading: | <img src="custom_emoji/yawn.gif" width="32" height="32"/> | :yawn: |
+| <img src="custom_emoji/whyyy.png" width="32" height="32"/> | :whyyy: | <img src="custom_emoji/belongs_in_the_trash.jpg" width="32" height="32"/> | :belongs_in_the_trash: | <img src="custom_emoji/footbo.png" width="32" height="32"/> | :footbo: |
+| <img src="custom_emoji/vibraslap.jpg" width="32" height="32"/> | :vibraslap: | <img src="custom_emoji/friendship_trophy.png" width="32" height="32"/> | :friendship_trophy: | <img src="custom_emoji/skype_worried.gif" width="32" height="32"/> | :skype_worried: |
+| <img src="custom_emoji/patrick_star.jpg" width="32" height="32"/> | :patrick_star: | <img src="custom_emoji/data.png" width="32" height="32"/> | :data: | <img src="custom_emoji/lighthouse.png" width="32" height="32"/> | :lighthouse: |
+| <img src="custom_emoji/palmface.png" width="32" height="32"/> | :palmface: | <img src="custom_emoji/parrotcop.gif" width="32" height="32"/> | :parrotcop: | <img src="custom_emoji/portal-blue.png" width="32" height="32"/> | :portal-blue: |
+| <img src="custom_emoji/happy_hour_parrot.gif" width="32" height="32"/> | :happy_hour_parrot: | <img src="custom_emoji/doc_r6.png" width="32" height="32"/> | :doc_r6: | <img src="custom_emoji/timbs.jpg" width="32" height="32"/> | :timbs: |
+| <img src="custom_emoji/workwork.jpg" width="32" height="32"/> | :workwork: | <img src="custom_emoji/kohlrabi.jpg" width="32" height="32"/> | :kohlrabi: | <img src="custom_emoji/gran.gif" width="32" height="32"/> | :gran: |
+| <img src="custom_emoji/cowboys.png" width="32" height="32"/> | :cowboys: | <img src="custom_emoji/love_parrot.gif" width="32" height="32"/> | :love_parrot: | <img src="custom_emoji/mario_block.png" width="32" height="32"/> | :mario_block: |
+| <img src="custom_emoji/thats-what-i-like.png" width="32" height="32"/> | :thats-what-i-like: | <img src="custom_emoji/doot.png" width="32" height="32"/> | :doot: | <img src="custom_emoji/chillparrot.gif" width="32" height="32"/> | :chillparrot: |
+| <img src="custom_emoji/coding-cowboy.gif" width="32" height="32"/> | :coding-cowboy: | <img src="custom_emoji/dusty_stick.png" width="32" height="32"/> | :dusty_stick: | <img src="custom_emoji/computer_rage.gif" width="32" height="32"/> | :computer_rage: |
+| <img src="custom_emoji/mtg_tap.png" width="32" height="32"/> | :mtg_tap: | <img src="custom_emoji/featuring_dante_from_the_devil_may_cry_series.png" width="32" height="32"/> | :featuring_dante_from_the_devil_may_cry_series: | <img src="custom_emoji/azflag.jpg" width="32" height="32"/> | :azflag: |
+| <img src="custom_emoji/magikarp.gif" width="32" height="32"/> | :magikarp: | <img src="custom_emoji/masshole.jpg" width="32" height="32"/> | :masshole: | <img src="custom_emoji/cucumber_cool.jpg" width="32" height="32"/> | :cucumber_cool: |
+| <img src="custom_emoji/fidget.gif" width="32" height="32"/> | :fidget: | <img src="custom_emoji/squirrel.png" width="32" height="32"/> | :squirrel: | <img src="custom_emoji/huge_metal_fan.jpg" width="32" height="32"/> | :huge_metal_fan: |
+| <img src="custom_emoji/dolan-classic.png" width="32" height="32"/> | :dolan-classic: | <img src="custom_emoji/fail.png" width="32" height="32"/> | :fail: | <img src="custom_emoji/partyparrot.gif" width="32" height="32"/> | :partyparrot: |
+| <img src="custom_emoji/coolcat.gif" width="32" height="32"/> | :coolcat: | <img src="custom_emoji/neutral.png" width="32" height="32"/> | :neutral: | <img src="custom_emoji/skype_penguin.gif" width="32" height="32"/> | :skype_penguin: |
+| <img src="custom_emoji/arcenciel.png" width="32" height="32"/> | :arcenciel: | <img src="custom_emoji/btc.png" width="32" height="32"/> | :btc: | <img src="custom_emoji/magic-eight-ball.png" width="32" height="32"/> | :magic-eight-ball: |
+| <img src="custom_emoji/emoticon_not_emoji.png" width="32" height="32"/> | :emoticon_not_emoji: | <img src="custom_emoji/hawkward.png" width="32" height="32"/> | :hawkward: | <img src="custom_emoji/thermite_r6.png" width="32" height="32"/> | :thermite_r6: |
+| <img src="custom_emoji/tardis.gif" width="32" height="32"/> | :tardis: | <img src="custom_emoji/doge.png" width="32" height="32"/> | :doge: | <img src="custom_emoji/swear.gif" width="32" height="32"/> | :swear: |
+| <img src="custom_emoji/nyanbow.gif" width="32" height="32"/> | :nyanbow: | <img src="custom_emoji/tetris.gif" width="32" height="32"/> | :tetris: | <img src="custom_emoji/civitas.png" width="32" height="32"/> | :civitas: |
+| <img src="custom_emoji/kroeger_overlord.jpg" width="32" height="32"/> | :kroeger_overlord: | <img src="custom_emoji/bear_hug.gif" width="32" height="32"/> | :bear_hug: | <img src="custom_emoji/backtick.png" width="32" height="32"/> | :backtick: |
+| <img src="custom_emoji/gavin_cat.jpg" width="32" height="32"/> | :gavin_cat: | <img src="custom_emoji/epic-sax-guy.gif" width="32" height="32"/> | :epic-sax-guy: | <img src="custom_emoji/rastacat.gif" width="32" height="32"/> | :rastacat: |
+| <img src="custom_emoji/montagne_r6.png" width="32" height="32"/> | :montagne_r6: | <img src="custom_emoji/elf.png" width="32" height="32"/> | :elf: | <img src="custom_emoji/kramer.jpg" width="32" height="32"/> | :kramer: |
+| <img src="custom_emoji/tacodog.gif" width="32" height="32"/> | :tacodog: | <img src="custom_emoji/ni.png" width="32" height="32"/> | :ni: | <img src="custom_emoji/shallot.jpg" width="32" height="32"/> | :shallot: |
+| <img src="custom_emoji/i_came_here_to_laugh_at_you.jpg" width="32" height="32"/> | :i_came_here_to_laugh_at_you: | <img src="custom_emoji/waiting-spongebob.gif" width="32" height="32"/> | :waiting-spongebob: | <img src="custom_emoji/trollface.png" width="32" height="32"/> | :trollface: |
+| <img src="custom_emoji/dumpsterfire.gif" width="32" height="32"/> | :dumpsterfire: | <img src="custom_emoji/pipe.png" width="32" height="32"/> | :pipe: | <img src="custom_emoji/goblue.jpg" width="32" height="32"/> | :goblue: |
+| <img src="custom_emoji/chameleon.png" width="32" height="32"/> | :chameleon: | <img src="custom_emoji/netflix.png" width="32" height="32"/> | :netflix: | <img src="custom_emoji/oko.png" width="32" height="32"/> | :oko: |
+| <img src="custom_emoji/javascript.png" width="32" height="32"/> | :javascript: | <img src="custom_emoji/frost_r6.png" width="32" height="32"/> | :frost_r6: | <img src="custom_emoji/lucascry.png" width="32" height="32"/> | :lucascry: |
+| <img src="custom_emoji/the_scream.jpg" width="32" height="32"/> | :the_scream: | <img src="custom_emoji/pride.png" width="32" height="32"/> | :pride: | <img src="custom_emoji/air-quote-left.gif" width="32" height="32"/> | :air-quote-left: |
+| <img src="custom_emoji/corgi2.jpg" width="32" height="32"/> | :corgi2: | <img src="custom_emoji/rick.png" width="32" height="32"/> | :rick: | <img src="custom_emoji/mario_jump.png" width="32" height="32"/> | :mario_jump: |
+| <img src="custom_emoji/8bitrip.png" width="32" height="32"/> | :8bitrip: | <img src="custom_emoji/boredparrot.gif" width="32" height="32"/> | :boredparrot: | <img src="custom_emoji/ankylosaurus.jpg" width="32" height="32"/> | :ankylosaurus: |
+| <img src="custom_emoji/these_hands.jpg" width="32" height="32"/> | :these_hands: | <img src="custom_emoji/nooice.png" width="32" height="32"/> | :nooice: | <img src="custom_emoji/wee.jpg" width="32" height="32"/> | :wee: |
+| <img src="custom_emoji/yall_come.png" width="32" height="32"/> | :yall_come: | <img src="custom_emoji/groot_pot.png" width="32" height="32"/> | :groot_pot: | <img src="custom_emoji/eeexcellent.gif" width="32" height="32"/> | :eeexcellent: |
+| <img src="custom_emoji/ohioflag.gif" width="32" height="32"/> | :ohioflag: | <img src="custom_emoji/mei.png" width="32" height="32"/> | :mei: | <img src="custom_emoji/punchtrees.png" width="32" height="32"/> | :punchtrees: |
+| <img src="custom_emoji/teamcaptain.jpg" width="32" height="32"/> | :teamcaptain: | <img src="custom_emoji/cereal.jpg" width="32" height="32"/> | :cereal: | <img src="custom_emoji/pterodactyl.jpg" width="32" height="32"/> | :pterodactyl: |
+| <img src="custom_emoji/bonzibuddy.png" width="32" height="32"/> | :bonzibuddy: | <img src="custom_emoji/badpoker.jpg" width="32" height="32"/> | :badpoker: | <img src="custom_emoji/hehehe.gif" width="32" height="32"/> | :hehehe: |
+| <img src="custom_emoji/foolsgold.jpg" width="32" height="32"/> | :foolsgold: | <img src="custom_emoji/asics.png" width="32" height="32"/> | :asics: | <img src="custom_emoji/snooze.gif" width="32" height="32"/> | :snooze: |
+| <img src="custom_emoji/mustache.jpg" width="32" height="32"/> | :mustache: | <img src="custom_emoji/bulbasaur.gif" width="32" height="32"/> | :bulbasaur: | <img src="custom_emoji/feels-good-man.png" width="32" height="32"/> | :feels-good-man: |
+| <img src="custom_emoji/yea.png" width="32" height="32"/> | :yea: | <img src="custom_emoji/juggalo.jpg" width="32" height="32"/> | :juggalo: | <img src="custom_emoji/bass.png" width="32" height="32"/> | :bass: |
+| <img src="custom_emoji/butthead.png" width="32" height="32"/> | :butthead: | <img src="custom_emoji/safe.jpg" width="32" height="32"/> | :safe: | <img src="custom_emoji/scumbag_jenkins.png" width="32" height="32"/> | :scumbag_jenkins: |
+| <img src="custom_emoji/brain.png" width="32" height="32"/> | :brain: | <img src="custom_emoji/halal_parrot.gif" width="32" height="32"/> | :halal_parrot: | <img src="custom_emoji/jackie_chan.jpg" width="32" height="32"/> | :jackie_chan: |
+| <img src="custom_emoji/bad_joke_eel.png" width="32" height="32"/> | :bad_joke_eel: | <img src="custom_emoji/nastygirl.jpg" width="32" height="32"/> | :nastygirl: | <img src="custom_emoji/salad.png" width="32" height="32"/> | :salad: |
+| <img src="custom_emoji/jigglypuff.gif" width="32" height="32"/> | :jigglypuff: | <img src="custom_emoji/grateful.png" width="32" height="32"/> | :grateful: | <img src="custom_emoji/ice-cream-parrot.gif" width="32" height="32"/> | :ice-cream-parrot: |
+| <img src="custom_emoji/milo.jpg" width="32" height="32"/> | :milo: | <img src="custom_emoji/notsureif.png" width="32" height="32"/> | :notsureif: | <img src="custom_emoji/nuclear.gif" width="32" height="32"/> | :nuclear: |
+| <img src="custom_emoji/arch.png" width="32" height="32"/> | :arch: | <img src="custom_emoji/pika.gif" width="32" height="32"/> | :pika: | <img src="custom_emoji/bat-signal.png" width="32" height="32"/> | :bat-signal: |
+| <img src="custom_emoji/scumbag_gh.png" width="32" height="32"/> | :scumbag_gh: | <img src="custom_emoji/headvswall.gif" width="32" height="32"/> | :headvswall: | <img src="custom_emoji/winrar.png" width="32" height="32"/> | :winrar: |
+| <img src="custom_emoji/kadabra.gif" width="32" height="32"/> | :kadabra: | <img src="custom_emoji/sxsw.png" width="32" height="32"/> | :sxsw: | <img src="custom_emoji/aw-yiss.png" width="32" height="32"/> | :aw-yiss: |
+| <img src="custom_emoji/fishbulb.png" width="32" height="32"/> | :fishbulb: | <img src="custom_emoji/thompson.png" width="32" height="32"/> | :thompson: | <img src="custom_emoji/i-guess-with-emphasis.png" width="32" height="32"/> | :i-guess-with-emphasis: |
+| <img src="custom_emoji/poo.gif" width="32" height="32"/> | :poo: | <img src="custom_emoji/brexit.jpg" width="32" height="32"/> | :brexit: | <img src="custom_emoji/nessburnt.gif" width="32" height="32"/> | :nessburnt: |
+| <img src="custom_emoji/classy.png" width="32" height="32"/> | :classy: | <img src="custom_emoji/celeryman.gif" width="32" height="32"/> | :celeryman: | <img src="custom_emoji/metal.png" width="32" height="32"/> | :metal: |
+| <img src="custom_emoji/bob.png" width="32" height="32"/> | :bob: | <img src="custom_emoji/hookem2.gif" width="32" height="32"/> | :hookem2: | <img src="custom_emoji/yodawg.jpg" width="32" height="32"/> | :yodawg: |
+| <img src="custom_emoji/hrwhistle.png" width="32" height="32"/> | :hrwhistle: | <img src="custom_emoji/degreemap.png" width="32" height="32"/> | :degreemap: | <img src="custom_emoji/helpcomputer.jpg" width="32" height="32"/> | :helpcomputer: |
+| <img src="custom_emoji/pancakes.png" width="32" height="32"/> | :pancakes: | <img src="custom_emoji/shrug.jpg" width="32" height="32"/> | :shrug: | <img src="custom_emoji/scumbag_burning_glass.png" width="32" height="32"/> | :scumbag_burning_glass: |
+| <img src="custom_emoji/apatosaurus.jpg" width="32" height="32"/> | :apatosaurus: | <img src="custom_emoji/lint.png" width="32" height="32"/> | :lint: | <img src="custom_emoji/business.jpg" width="32" height="32"/> | :business: |
+| <img src="custom_emoji/feelsgoodman.png" width="32" height="32"/> | :feelsgoodman: | <img src="custom_emoji/gottarun.gif" width="32" height="32"/> | :gottarun: | <img src="custom_emoji/colellipsis.jpg" width="32" height="32"/> | :colellipsis: |
+| <img src="custom_emoji/teehee.png" width="32" height="32"/> | :teehee: | <img src="custom_emoji/op.jpg" width="32" height="32"/> | :op: | <img src="custom_emoji/chariot.jpg" width="32" height="32"/> | :chariot: |
+| <img src="custom_emoji/crying_jordan.png" width="32" height="32"/> | :crying_jordan: | <img src="custom_emoji/gentleman_parrot.gif" width="32" height="32"/> | :gentleman_parrot: | <img src="custom_emoji/glitter-rainbow2.gif" width="32" height="32"/> | :glitter-rainbow2: |
+| <img src="custom_emoji/docker.png" width="32" height="32"/> | :docker: | <img src="custom_emoji/feels-bad-man.png" width="32" height="32"/> | :feels-bad-man: | <img src="custom_emoji/sledge_r6.png" width="32" height="32"/> | :sledge_r6: |
+| <img src="custom_emoji/pretzel.jpg" width="32" height="32"/> | :pretzel: | <img src="custom_emoji/bowtie.png" width="32" height="32"/> | :bowtie: | <img src="custom_emoji/housestark.png" width="32" height="32"/> | :housestark: |
+| <img src="custom_emoji/brit.png" width="32" height="32"/> | :brit: | <img src="custom_emoji/pun.png" width="32" height="32"/> | :pun: | <img src="custom_emoji/omgmetrics.gif" width="32" height="32"/> | :omgmetrics: |
+| <img src="custom_emoji/smoke_r6.png" width="32" height="32"/> | :smoke_r6: | <img src="custom_emoji/whowouldwin.jpg" width="32" height="32"/> | :whowouldwin: | <img src="custom_emoji/rubiks_cube.jpg" width="32" height="32"/> | :rubiks_cube: |
+| <img src="custom_emoji/wakko.png" width="32" height="32"/> | :wakko: | <img src="custom_emoji/party_fidget_spinner.gif" width="32" height="32"/> | :party_fidget_spinner: | <img src="custom_emoji/scumbag_chupacabra.png" width="32" height="32"/> | :scumbag_chupacabra: |
+| <img src="custom_emoji/sloth.png" width="32" height="32"/> | :sloth: | <img src="custom_emoji/edfi.png" width="32" height="32"/> | :edfi: | <img src="custom_emoji/scumbag_java.jpg" width="32" height="32"/> | :scumbag_java: |
+| <img src="custom_emoji/parrotwave2.gif" width="32" height="32"/> | :parrotwave2: | <img src="custom_emoji/papabless.png" width="32" height="32"/> | :papabless: | <img src="custom_emoji/guy_fieri.png" width="32" height="32"/> | :guy_fieri: |
+| <img src="custom_emoji/mrv.gif" width="32" height="32"/> | :mrv: | <img src="custom_emoji/beryl.png" width="32" height="32"/> | :beryl: | <img src="custom_emoji/lambda.png" width="32" height="32"/> | :lambda: |
+| <img src="custom_emoji/virus.gif" width="32" height="32"/> | :virus: | <img src="custom_emoji/say_what.png" width="32" height="32"/> | :say_what: | <img src="custom_emoji/new_mexico.png" width="32" height="32"/> | :new_mexico: |
+| <img src="custom_emoji/jerry.jpg" width="32" height="32"/> | :jerry: | <img src="custom_emoji/party_frog.gif" width="32" height="32"/> | :party_frog: | <img src="custom_emoji/nucular.jpg" width="32" height="32"/> | :nucular: |
+| <img src="custom_emoji/mock.png" width="32" height="32"/> | :mock: | <img src="custom_emoji/horsea.gif" width="32" height="32"/> | :horsea: | <img src="custom_emoji/plank.jpg" width="32" height="32"/> | :plank: |
+| <img src="custom_emoji/face_with_one_eyebrow_raised.png" width="32" height="32"/> | :face_with_one_eyebrow_raised: | <img src="custom_emoji/scumbag_highcharts.png" width="32" height="32"/> | :scumbag_highcharts: | <img src="custom_emoji/diablo.png" width="32" height="32"/> | :diablo: |
+| <img src="custom_emoji/slack.png" width="32" height="32"/> | :slack: | <img src="custom_emoji/goberserk.png" width="32" height="32"/> | :goberserk: | <img src="custom_emoji/sif.png" width="32" height="32"/> | :sif: |
+| <img src="custom_emoji/maryjane.png" width="32" height="32"/> | :maryjane: | <img src="custom_emoji/pitchfork.png" width="32" height="32"/> | :pitchfork: | <img src="custom_emoji/avocado.jpg" width="32" height="32"/> | :avocado: |
+| <img src="custom_emoji/nod.gif" width="32" height="32"/> | :nod: | <img src="custom_emoji/redmage.png" width="32" height="32"/> | :redmage: | <img src="custom_emoji/gooby.png" width="32" height="32"/> | :gooby: |
+| <img src="custom_emoji/bagel.jpg" width="32" height="32"/> | :bagel: | <img src="custom_emoji/ditto.png" width="32" height="32"/> | :ditto: | <img src="custom_emoji/copstop.gif" width="32" height="32"/> | :copstop: |
+| <img src="custom_emoji/rollsafe.jpg" width="32" height="32"/> | :rollsafe: | <img src="custom_emoji/scumbag_elevio.png" width="32" height="32"/> | :scumbag_elevio: | <img src="custom_emoji/ito_en.jpg" width="32" height="32"/> | :ito_en: |
+| <img src="custom_emoji/epic_fail.png" width="32" height="32"/> | :epic_fail: | <img src="custom_emoji/squirtle.gif" width="32" height="32"/> | :squirtle: | <img src="custom_emoji/skype_puke.gif" width="32" height="32"/> | :skype_puke: |
+| <img src="custom_emoji/creeper.jpg" width="32" height="32"/> | :creeper: | <img src="custom_emoji/sift3d.gif" width="32" height="32"/> | :sift3d: | <img src="custom_emoji/panicbasket.png" width="32" height="32"/> | :panicbasket: |
+| <img src="custom_emoji/banana_parrot.gif" width="32" height="32"/> | :banana_parrot: | <img src="custom_emoji/lovecat.gif" width="32" height="32"/> | :lovecat: | <img src="custom_emoji/cant_even.jpg" width="32" height="32"/> | :cant_even: |
+| <img src="custom_emoji/limewire.png" width="32" height="32"/> | :limewire: | <img src="custom_emoji/test.gif" width="32" height="32"/> | :test: | <img src="custom_emoji/wfh_parrot.gif" width="32" height="32"/> | :wfh_parrot: |
+| <img src="custom_emoji/glitter-butterfly.gif" width="32" height="32"/> | :glitter-butterfly: | <img src="custom_emoji/rivera_rockcrusher.jpg" width="32" height="32"/> | :rivera_rockcrusher: | <img src="custom_emoji/dogezzz.gif" width="32" height="32"/> | :dogezzz: |
+| <img src="custom_emoji/paula.gif" width="32" height="32"/> | :paula: | <img src="custom_emoji/sandy_cheeks.gif" width="32" height="32"/> | :sandy_cheeks: | <img src="custom_emoji/betterkolache.png" width="32" height="32"/> | :betterkolache: |
+| <img src="custom_emoji/state_of_jefferson.jpg" width="32" height="32"/> | :state_of_jefferson: | <img src="custom_emoji/kappa.png" width="32" height="32"/> | :kappa: | <img src="custom_emoji/uffda.png" width="32" height="32"/> | :uffda: |
+| <img src="custom_emoji/air-quote-right.gif" width="32" height="32"/> | :air-quote-right: | <img src="custom_emoji/shroom.gif" width="32" height="32"/> | :shroom: | <img src="custom_emoji/rage3.png" width="32" height="32"/> | :rage3: |
+| <img src="custom_emoji/supersmiley.png" width="32" height="32"/> | :supersmiley: | <img src="custom_emoji/xmen.png" width="32" height="32"/> | :xmen: | <img src="custom_emoji/chbox_twenty_off_the_multi-platinum_album_supernatural.png" width="32" height="32"/> | :chbox_twenty_off_the_multi-platinum_album_supernatural: |
+| <img src="custom_emoji/high.gif" width="32" height="32"/> | :high: | <img src="custom_emoji/brain_tiny.jpg" width="32" height="32"/> | :brain_tiny: | <img src="custom_emoji/buck_r6.png" width="32" height="32"/> | :buck_r6: |
+| <img src="custom_emoji/pacman.png" width="32" height="32"/> | :pacman: | <img src="custom_emoji/table_flip.jpg" width="32" height="32"/> | :table_flip: | <img src="custom_emoji/floof.png" width="32" height="32"/> | :floof: |
+| <img src="custom_emoji/mtg_g.png" width="32" height="32"/> | :mtg_g: | <img src="custom_emoji/jeffjump.gif" width="32" height="32"/> | :jeffjump: | <img src="custom_emoji/llap.png" width="32" height="32"/> | :llap: |
+| <img src="custom_emoji/kenan.png" width="32" height="32"/> | :kenan: | <img src="custom_emoji/id-rather-be-listening-to-the-grammy-award-winning-1999-hit-smooth-by-santana-feat-rob-thomas-of-mat.png" width="32" height="32"/> | :id-rather-be-listening-to-the-grammy-award-winning-1999-hit-smooth-by-santana-feat-rob-thomas-of-mat: | <img src="custom_emoji/party_cat.gif" width="32" height="32"/> | :party_cat: |
+| <img src="custom_emoji/dogeza.png" width="32" height="32"/> | :dogeza: | <img src="custom_emoji/moto.jpg" width="32" height="32"/> | :moto: | <img src="custom_emoji/twins_parrot.gif" width="32" height="32"/> | :twins_parrot: |
+| <img src="custom_emoji/success.png" width="32" height="32"/> | :success: | <img src="custom_emoji/wat.png" width="32" height="32"/> | :wat: | <img src="custom_emoji/aa.jpg" width="32" height="32"/> | :aa: |
+| <img src="custom_emoji/cthulhu.jpg" width="32" height="32"/> | :cthulhu: | <img src="custom_emoji/mtg_b.png" width="32" height="32"/> | :mtg_b: | <img src="custom_emoji/parrotmustache.gif" width="32" height="32"/> | :parrotmustache: |
+| <img src="custom_emoji/thanks.png" width="32" height="32"/> | :thanks: | <img src="custom_emoji/charmander_dancing.gif" width="32" height="32"/> | :charmander_dancing: | <img src="custom_emoji/champ.png" width="32" height="32"/> | :champ: |
+| <img src="custom_emoji/trademark.jpg" width="32" height="32"/> | :trademark: | <img src="custom_emoji/imwithher.png" width="32" height="32"/> | :imwithher: | <img src="custom_emoji/why-not-zoidberg.png" width="32" height="32"/> | :why-not-zoidberg: |
+| <img src="custom_emoji/moneytree.png" width="32" height="32"/> | :moneytree: | <img src="custom_emoji/rage1.png" width="32" height="32"/> | :rage1: | <img src="custom_emoji/pulse_r6.png" width="32" height="32"/> | :pulse_r6: |
+| <img src="custom_emoji/release.jpg" width="32" height="32"/> | :release: | <img src="custom_emoji/neckbeard.png" width="32" height="32"/> | :neckbeard: | <img src="custom_emoji/girhead.gif" width="32" height="32"/> | :girhead: |
+| <img src="custom_emoji/fu.png" width="32" height="32"/> | :fu: | <img src="custom_emoji/blonde_sassy_parrot.gif" width="32" height="32"/> | :blonde_sassy_parrot: | <img src="custom_emoji/larry.png" width="32" height="32"/> | :larry: |
+| <img src="custom_emoji/hmmm.png" width="32" height="32"/> | :hmmm: | <img src="custom_emoji/gramble.jpg" width="32" height="32"/> | :gramble: | <img src="custom_emoji/pokeball.png" width="32" height="32"/> | :pokeball: |
+| <img src="custom_emoji/yay.png" width="32" height="32"/> | :yay: | <img src="custom_emoji/old_man_yells_at_cloud.jpg" width="32" height="32"/> | :old_man_yells_at_cloud: | <img src="custom_emoji/explodyparrot.gif" width="32" height="32"/> | :explodyparrot: |
+| <img src="custom_emoji/skype_rainbow.gif" width="32" height="32"/> | :skype_rainbow: | <img src="custom_emoji/kazoo.png" width="32" height="32"/> | :kazoo: | <img src="custom_emoji/model.png" width="32" height="32"/> | :model: |
+| <img src="custom_emoji/gainz.jpg" width="32" height="32"/> | :gainz: | <img src="custom_emoji/fist_bump.gif" width="32" height="32"/> | :fist_bump: | <img src="custom_emoji/onion.jpg" width="32" height="32"/> | :onion: |
+| <img src="custom_emoji/george.jpg" width="32" height="32"/> | :george: | <img src="custom_emoji/tyrannosaurus.png" width="32" height="32"/> | :tyrannosaurus: | <img src="custom_emoji/gengar.gif" width="32" height="32"/> | :gengar: |
+| <img src="custom_emoji/tribble.png" width="32" height="32"/> | :tribble: | <img src="custom_emoji/thumbsup_all.gif" width="32" height="32"/> | :thumbsup_all: | <img src="custom_emoji/mustard_greens.png" width="32" height="32"/> | :mustard_greens: |
+| <img src="custom_emoji/sorry_dave.jpg" width="32" height="32"/> | :sorry_dave: | <img src="custom_emoji/goomba.gif" width="32" height="32"/> | :goomba: | <img src="custom_emoji/party-dinosaur.gif" width="32" height="32"/> | :party-dinosaur: |
+| <img src="custom_emoji/hypnotoad.gif" width="32" height="32"/> | :hypnotoad: | <img src="custom_emoji/puravida.png" width="32" height="32"/> | :puravida: | <img src="custom_emoji/ash_r6.png" width="32" height="32"/> | :ash_r6: |
+| <img src="custom_emoji/polvos.png" width="32" height="32"/> | :polvos: | <img src="custom_emoji/piedpiper.png" width="32" height="32"/> | :piedpiper: | <img src="custom_emoji/iq_r6.png" width="32" height="32"/> | :iq_r6: |
+| <img src="custom_emoji/yesss.jpg" width="32" height="32"/> | :yesss: | <img src="custom_emoji/partywizard.gif" width="32" height="32"/> | :partywizard: | <img src="custom_emoji/bae.jpg" width="32" height="32"/> | :bae: |
+| <img src="custom_emoji/vim.png" width="32" height="32"/> | :vim: | <img src="custom_emoji/oldtimeyparrot.gif" width="32" height="32"/> | :oldtimeyparrot: | <img src="custom_emoji/speechless.gif" width="32" height="32"/> | :speechless: |
+| <img src="custom_emoji/pickle.png" width="32" height="32"/> | :pickle: | <img src="custom_emoji/gothparrot.gif" width="32" height="32"/> | :gothparrot: | <img src="custom_emoji/ythocat.png" width="32" height="32"/> | :ythocat: |
+| <img src="custom_emoji/sadpanda.jpg" width="32" height="32"/> | :sadpanda: | <img src="custom_emoji/escalator.jpg" width="32" height="32"/> | :escalator: | <img src="custom_emoji/broclit.png" width="32" height="32"/> | :broclit: |
+| <img src="custom_emoji/rice_u.png" width="32" height="32"/> | :rice_u: | <img src="custom_emoji/cellphone.png" width="32" height="32"/> | :cellphone: | <img src="custom_emoji/twss.png" width="32" height="32"/> | :twss: |
+| <img src="custom_emoji/thicc_vegan_wife.jpg" width="32" height="32"/> | :thicc_vegan_wife: | <img src="custom_emoji/recorder.png" width="32" height="32"/> | :recorder: | <img src="custom_emoji/nooice2.png" width="32" height="32"/> | :nooice2: |
+| <img src="custom_emoji/404.png" width="32" height="32"/> | :404: | <img src="custom_emoji/slavoj_zizek.jpg" width="32" height="32"/> | :slavoj_zizek: | <img src="custom_emoji/slowparrot.gif" width="32" height="32"/> | :slowparrot: |
+| <img src="custom_emoji/kale.jpg" width="32" height="32"/> | :kale: | <img src="custom_emoji/yey.png" width="32" height="32"/> | :yey: | <img src="custom_emoji/poojump.gif" width="32" height="32"/> | :poojump: |
+| <img src="custom_emoji/dubcat.gif" width="32" height="32"/> | :dubcat: | <img src="custom_emoji/godmode.png" width="32" height="32"/> | :godmode: | <img src="custom_emoji/dharbin.jpg" width="32" height="32"/> | :dharbin: |
+| <img src="custom_emoji/thatfeel.png" width="32" height="32"/> | :thatfeel: | <img src="custom_emoji/tips_fedora.jpg" width="32" height="32"/> | :tips_fedora: | <img src="custom_emoji/lolwut.png" width="32" height="32"/> | :lolwut: |
+| <img src="custom_emoji/thatwaseasy.jpg" width="32" height="32"/> | :thatwaseasy: | <img src="custom_emoji/dankengine.png" width="32" height="32"/> | :dankengine: | <img src="custom_emoji/over9k.png" width="32" height="32"/> | :over9k: |
+| <img src="custom_emoji/fastparrot.gif" width="32" height="32"/> | :fastparrot: | <img src="custom_emoji/scumbag_docker.png" width="32" height="32"/> | :scumbag_docker: | <img src="custom_emoji/angery.png" width="32" height="32"/> | :angery: |
+| <img src="custom_emoji/scumbag_excalibur.png" width="32" height="32"/> | :scumbag_excalibur: | <img src="custom_emoji/you-cant-if-you-dont.png" width="32" height="32"/> | :you-cant-if-you-dont: | <img src="custom_emoji/badger.gif" width="32" height="32"/> | :badger: |
+| <img src="custom_emoji/badgerbadger.gif" width="32" height="32"/> | :badgerbadger: | <img src="custom_emoji/b_r_b.gif" width="32" height="32"/> | :b_r_b: | <img src="custom_emoji/winders.png" width="32" height="32"/> | :winders: |
+| <img src="custom_emoji/drums.png" width="32" height="32"/> | :drums: | <img src="custom_emoji/angular.png" width="32" height="32"/> | :angular: | <img src="custom_emoji/indubitably.jpg" width="32" height="32"/> | :indubitably: |
+| <img src="custom_emoji/moustache.png" width="32" height="32"/> | :moustache: | <img src="custom_emoji/bazinga.jpg" width="32" height="32"/> | :bazinga: | <img src="custom_emoji/parrotwave4.gif" width="32" height="32"/> | :parrotwave4: |
+| <img src="custom_emoji/allthethings.png" width="32" height="32"/> | :allthethings: | <img src="custom_emoji/tayne_beta.jpg" width="32" height="32"/> | :tayne_beta: | <img src="custom_emoji/poomeditate.gif" width="32" height="32"/> | :poomeditate: |
+| <img src="custom_emoji/coachz.png" width="32" height="32"/> | :coachz: | <img src="custom_emoji/rl.png" width="32" height="32"/> | :rl: | <img src="custom_emoji/successful.png" width="32" height="32"/> | :successful: |
+| <img src="custom_emoji/congaparrot.gif" width="32" height="32"/> | :congaparrot: | <img src="custom_emoji/gameboycat.gif" width="32" height="32"/> | :gameboycat: | <img src="custom_emoji/gendo.jpg" width="32" height="32"/> | :gendo: |
+| <img src="custom_emoji/carrot.jpg" width="32" height="32"/> | :carrot: | <img src="custom_emoji/surprise.gif" width="32" height="32"/> | :surprise: | <img src="custom_emoji/torch.png" width="32" height="32"/> | :torch: |
+| <img src="custom_emoji/help_please.jpg" width="32" height="32"/> | :help_please: | <img src="custom_emoji/sad_party_panda.gif" width="32" height="32"/> | :sad_party_panda: | <img src="custom_emoji/nyan.gif" width="32" height="32"/> | :nyan: |
+| <img src="custom_emoji/empire.png" width="32" height="32"/> | :empire: | <img src="custom_emoji/zucchini.jpg" width="32" height="32"/> | :zucchini: | <img src="custom_emoji/clown.jpg" width="32" height="32"/> | :clown: |
+| <img src="custom_emoji/pdx.png" width="32" height="32"/> | :pdx: | <img src="custom_emoji/ness.gif" width="32" height="32"/> | :ness: | <img src="custom_emoji/okawaii.jpg" width="32" height="32"/> | :okawaii: |
+| <img src="custom_emoji/slidewhistle.png" width="32" height="32"/> | :slidewhistle: | <img src="custom_emoji/fuze_r6.png" width="32" height="32"/> | :fuze_r6: | <img src="custom_emoji/fwp.gif" width="32" height="32"/> | :fwp: |
+| <img src="custom_emoji/mega-rage.png" width="32" height="32"/> | :mega-rage: | <img src="custom_emoji/pirate.png" width="32" height="32"/> | :pirate: | <img src="custom_emoji/omanyte.png" width="32" height="32"/> | :omanyte: |
+| <img src="custom_emoji/dididothat.jpg" width="32" height="32"/> | :dididothat: | <img src="custom_emoji/pop_tart.png" width="32" height="32"/> | :pop_tart: | <img src="custom_emoji/do-not-want.png" width="32" height="32"/> | :do-not-want: |
+| <img src="custom_emoji/lettuce.png" width="32" height="32"/> | :lettuce: | <img src="custom_emoji/quiterly.jpg" width="32" height="32"/> | :quiterly: | <img src="custom_emoji/badmodel.png" width="32" height="32"/> | :badmodel: |
+| <img src="custom_emoji/trescomas.png" width="32" height="32"/> | :trescomas: | <img src="custom_emoji/hacks.jpg" width="32" height="32"/> | :hacks: | <img src="custom_emoji/nay.png" width="32" height="32"/> | :nay: |
+| <img src="custom_emoji/iron.png" width="32" height="32"/> | :iron: | <img src="custom_emoji/scumbag_excel.png" width="32" height="32"/> | :scumbag_excel: | <img src="custom_emoji/no_shame.jpg" width="32" height="32"/> | :no_shame: |
+| <img src="custom_emoji/bogs.png" width="32" height="32"/> | :bogs: | <img src="custom_emoji/nessbike.gif" width="32" height="32"/> | :nessbike: | <img src="custom_emoji/srsly.gif" width="32" height="32"/> | :srsly: |
+| <img src="custom_emoji/sad_tom_brady.jpg" width="32" height="32"/> | :sad_tom_brady: | <img src="custom_emoji/sparky.png" width="32" height="32"/> | :sparky: | <img src="custom_emoji/kebab.jpg" width="32" height="32"/> | :kebab: |
+| <img src="custom_emoji/mtg_u.png" width="32" height="32"/> | :mtg_u: | <img src="custom_emoji/pizza_parrot.gif" width="32" height="32"/> | :pizza_parrot: | <img src="custom_emoji/adeptus_astartes.jpg" width="32" height="32"/> | :adeptus_astartes: |
+| <img src="custom_emoji/yao.png" width="32" height="32"/> | :yao: | <img src="custom_emoji/bye_felicia.jpg" width="32" height="32"/> | :bye_felicia: | <img src="custom_emoji/parrotwave7.gif" width="32" height="32"/> | :parrotwave7: |
+| <img src="custom_emoji/octocat.png" width="32" height="32"/> | :octocat: | <img src="custom_emoji/soylent.jpg" width="32" height="32"/> | :soylent: | <img src="custom_emoji/please.png" width="32" height="32"/> | :please: |
+| <img src="custom_emoji/yo.png" width="32" height="32"/> | :yo: | <img src="custom_emoji/crickets.jpg" width="32" height="32"/> | :crickets: | <img src="custom_emoji/brain_huge.jpg" width="32" height="32"/> | :brain_huge: |
+| <img src="custom_emoji/mario_standing.png" width="32" height="32"/> | :mario_standing: | <img src="custom_emoji/brain_cosmic.png" width="32" height="32"/> | :brain_cosmic: | <img src="custom_emoji/flag-tx.png" width="32" height="32"/> | :flag-tx: |
+| <img src="custom_emoji/maryland.png" width="32" height="32"/> | :maryland: | <img src="custom_emoji/axe.png" width="32" height="32"/> | :axe: | <img src="custom_emoji/nope2.jpg" width="32" height="32"/> | :nope2: |
+| <img src="custom_emoji/california.png" width="32" height="32"/> | :california: | <img src="custom_emoji/emoji_spacer.png" width="32" height="32"/> | :emoji_spacer: | <img src="custom_emoji/doh.png" width="32" height="32"/> | :doh: |
+| <img src="custom_emoji/bueller_bueller.jpg" width="32" height="32"/> | :bueller_bueller: | <img src="custom_emoji/skater.jpg" width="32" height="32"/> | :skater: | <img src="custom_emoji/aesthetic.jpg" width="32" height="32"/> | :aesthetic: |
+| <img src="custom_emoji/tr8r.gif" width="32" height="32"/> | :tr8r: | <img src="custom_emoji/chadsthree.png" width="32" height="32"/> | :chadsthree: | <img src="custom_emoji/paulawalk.gif" width="32" height="32"/> | :paulawalk: |
+| <img src="custom_emoji/lizard.jpg" width="32" height="32"/> | :lizard: | <img src="custom_emoji/breakdance.gif" width="32" height="32"/> | :breakdance: | <img src="custom_emoji/nesszzz.gif" width="32" height="32"/> | :nesszzz: |
+| <img src="custom_emoji/khunter.jpg" width="32" height="32"/> | :khunter: | <img src="custom_emoji/scumbag_salesforce.png" width="32" height="32"/> | :scumbag_salesforce: | <img src="custom_emoji/village.png" width="32" height="32"/> | :village: |
+| <img src="custom_emoji/megaman.gif" width="32" height="32"/> | :megaman: | <img src="custom_emoji/demo2win.jpg" width="32" height="32"/> | :demo2win: | <img src="custom_emoji/angry-skeletor.gif" width="32" height="32"/> | :angry-skeletor: |
+| <img src="custom_emoji/kwalk.gif" width="32" height="32"/> | :kwalk: | <img src="custom_emoji/okilly_dokilly.jpg" width="32" height="32"/> | :okilly_dokilly: | <img src="custom_emoji/overwatch.png" width="32" height="32"/> | :overwatch: |
+| <img src="custom_emoji/glaz_r6.png" width="32" height="32"/> | :glaz_r6: | <img src="custom_emoji/raspberry.jpg" width="32" height="32"/> | :raspberry: | <img src="custom_emoji/cry-a-lot.png" width="32" height="32"/> | :cry-a-lot: |
+| <img src="custom_emoji/nocturnal.png" width="32" height="32"/> | :nocturnal: | <img src="custom_emoji/mtg-red.png" width="32" height="32"/> | :mtg-red: | <img src="custom_emoji/secretsquirrel.png" width="32" height="32"/> | :secretsquirrel: |
+| <img src="custom_emoji/a_sink.png" width="32" height="32"/> | :a_sink: | <img src="custom_emoji/aint-nobody-got-time-for-that.png" width="32" height="32"/> | :aint-nobody-got-time-for-that: | <img src="custom_emoji/canes.png" width="32" height="32"/> | :canes: |
+| <img src="custom_emoji/wow.png" width="32" height="32"/> | :wow: | <img src="custom_emoji/koolaid.jpg" width="32" height="32"/> | :koolaid: | <img src="custom_emoji/smoothie.jpg" width="32" height="32"/> | :smoothie: |
+| <img src="custom_emoji/bellpepper.jpg" width="32" height="32"/> | :bellpepper: | <img src="custom_emoji/nessbotded.gif" width="32" height="32"/> | :nessbotded: | <img src="custom_emoji/okiedokie.png" width="32" height="32"/> | :okiedokie: |
+| <img src="custom_emoji/kujayhawk.png" width="32" height="32"/> | :kujayhawk: | <img src="custom_emoji/blinky.jpg" width="32" height="32"/> | :blinky: | <img src="custom_emoji/geodude.png" width="32" height="32"/> | :geodude: |
+| <img src="custom_emoji/sock.png" width="32" height="32"/> | :sock: | <img src="custom_emoji/mango.png" width="32" height="32"/> | :mango: | <img src="custom_emoji/shuffleparrot.gif" width="32" height="32"/> | :shuffleparrot: |
+| <img src="custom_emoji/feelsbad.png" width="32" height="32"/> | :feelsbad: | <img src="custom_emoji/steve_from_smashmouth.jpg" width="32" height="32"/> | :steve_from_smashmouth: | <img src="custom_emoji/missingno.png" width="32" height="32"/> | :missingno: |
+| <img src="custom_emoji/rube.png" width="32" height="32"/> | :rube: | <img src="custom_emoji/peetza.png" width="32" height="32"/> | :peetza: | <img src="custom_emoji/blaziken.gif" width="32" height="32"/> | :blaziken: |
+| <img src="custom_emoji/jenkins.png" width="32" height="32"/> | :jenkins: | <img src="custom_emoji/beavis.png" width="32" height="32"/> | :beavis: | <img src="custom_emoji/rebel.png" width="32" height="32"/> | :rebel: |
+| <img src="custom_emoji/kolache.jpg" width="32" height="32"/> | :kolache: | <img src="custom_emoji/scumbag_datatables.png" width="32" height="32"/> | :scumbag_datatables: | <img src="custom_emoji/party_sad_panda.gif" width="32" height="32"/> | :party_sad_panda: |
+| <img src="custom_emoji/rekt.gif" width="32" height="32"/> | :rekt: | <img src="custom_emoji/coin.gif" width="32" height="32"/> | :coin: | <img src="custom_emoji/simple_smile.png" width="32" height="32"/> | :simple_smile: |
+| <img src="custom_emoji/student_success_rat.jpg" width="32" height="32"/> | :student_success_rat: | <img src="custom_emoji/pp.png" width="32" height="32"/> | :pp: | <img src="custom_emoji/cornholio.png" width="32" height="32"/> | :cornholio: |
+| <img src="custom_emoji/themostinnovativeproductsofalltimes.png" width="32" height="32"/> | :themostinnovativeproductsofalltimes: | <img src="custom_emoji/parrotwave1.gif" width="32" height="32"/> | :parrotwave1: | <img src="custom_emoji/biggie.jpg" width="32" height="32"/> | :biggie: |
+| <img src="custom_emoji/thumbsup_drumpf.jpg" width="32" height="32"/> | :thumbsup_drumpf: | <img src="custom_emoji/oyster_smiling.jpg" width="32" height="32"/> | :oyster_smiling: | <img src="custom_emoji/monster.jpg" width="32" height="32"/> | :monster: |
+| <img src="custom_emoji/guise.jpg" width="32" height="32"/> | :guise: | <img src="custom_emoji/wu.png" width="32" height="32"/> | :wu: | <img src="custom_emoji/indeed.png" width="32" height="32"/> | :indeed: |
+| <img src="custom_emoji/mute_r6.png" width="32" height="32"/> | :mute_r6: | <img src="custom_emoji/python.png" width="32" height="32"/> | :python: | <img src="custom_emoji/tacocat.gif" width="32" height="32"/> | :tacocat: |
+| <img src="custom_emoji/inlove.gif" width="32" height="32"/> | :inlove: | <img src="custom_emoji/hodor.png" width="32" height="32"/> | :hodor: | <img src="custom_emoji/frankerz.png" width="32" height="32"/> | :frankerz: |
+| <img src="custom_emoji/ytho.png" width="32" height="32"/> | :ytho: | <img src="custom_emoji/drill.png" width="32" height="32"/> | :drill: | <img src="custom_emoji/proportional.png" width="32" height="32"/> | :proportional: |
+| <img src="custom_emoji/harambe.png" width="32" height="32"/> | :harambe: | <img src="custom_emoji/guy_fieri_parrot.gif" width="32" height="32"/> | :guy_fieri_parrot: | <img src="custom_emoji/nessbot.gif" width="32" height="32"/> | :nessbot: |
+| <img src="custom_emoji/lolwat.gif" width="32" height="32"/> | :lolwat: | <img src="custom_emoji/yiss.jpg" width="32" height="32"/> | :yiss: | <img src="custom_emoji/vince.gif" width="32" height="32"/> | :vince: |
+| <img src="custom_emoji/sifted.png" width="32" height="32"/> | :sifted: | <img src="custom_emoji/yi.png" width="32" height="32"/> | :yi: | <img src="custom_emoji/csagan.png" width="32" height="32"/> | :csagan: |
+| <img src="custom_emoji/build_failure.png" width="32" height="32"/> | :build_failure: | <img src="custom_emoji/civsenpai.png" width="32" height="32"/> | :civsenpai: | <img src="custom_emoji/spooky_action_at_a_distance.jpg" width="32" height="32"/> | :spooky_action_at_a_distance: |
+| <img src="custom_emoji/legion.png" width="32" height="32"/> | :legion: | <img src="custom_emoji/jeorb.png" width="32" height="32"/> | :jeorb: | <img src="custom_emoji/batman_logo.png" width="32" height="32"/> | :batman_logo: |
+| <img src="custom_emoji/reversecongaparrot.gif" width="32" height="32"/> | :reversecongaparrot: | <img src="custom_emoji/nope.png" width="32" height="32"/> | :nope: | <img src="custom_emoji/gyarados.gif" width="32" height="32"/> | :gyarados: |
+| <img src="custom_emoji/barks_internally.png" width="32" height="32"/> | :barks_internally: | <img src="custom_emoji/turkey2.gif" width="32" height="32"/> | :turkey2: | <img src="custom_emoji/terminal.png" width="32" height="32"/> | :terminal: |
+| <img src="custom_emoji/illaminate.png" width="32" height="32"/> | :illaminate: | <img src="custom_emoji/oregon.jpg" width="32" height="32"/> | :oregon: | <img src="custom_emoji/kon.png" width="32" height="32"/> | :kon: |
+| <img src="custom_emoji/rumham.jpg" width="32" height="32"/> | :rumham: | <img src="custom_emoji/peanut_butter_jelly_time.gif" width="32" height="32"/> | :peanut_butter_jelly_time: | <img src="custom_emoji/data_apocalypse.gif" width="32" height="32"/> | :data_apocalypse: |
+| <img src="custom_emoji/believeland.jpg" width="32" height="32"/> | :believeland: | <img src="custom_emoji/pii.jpg" width="32" height="32"/> | :pii: | <img src="custom_emoji/ultimate.jpg" width="32" height="32"/> | :ultimate: |
+| <img src="custom_emoji/skype_monkey.gif" width="32" height="32"/> | :skype_monkey: | <img src="custom_emoji/big_boss_salute.jpg" width="32" height="32"/> | :big_boss_salute: | <img src="custom_emoji/new_relic.png" width="32" height="32"/> | :new_relic: |
+| <img src="custom_emoji/ackbar.jpg" width="32" height="32"/> | :ackbar: | <img src="custom_emoji/damn.png" width="32" height="32"/> | :damn: | <img src="custom_emoji/parrotwave3.gif" width="32" height="32"/> | :parrotwave3: |
+| <img src="custom_emoji/quality.jpg" width="32" height="32"/> | :quality: | <img src="custom_emoji/consuela.png" width="32" height="32"/> | :consuela: | <img src="custom_emoji/dikembe.gif" width="32" height="32"/> | :dikembe: |
+| <img src="custom_emoji/geodude2.png" width="32" height="32"/> | :geodude2: | <img src="custom_emoji/yase.jpg" width="32" height="32"/> | :yase: | <img src="custom_emoji/harambe2.png" width="32" height="32"/> | :harambe2: |
+| <img src="custom_emoji/brain_medium.jpg" width="32" height="32"/> | :brain_medium: | <img src="custom_emoji/broccoli.png" width="32" height="32"/> | :broccoli: | <img src="custom_emoji/zombiecat.gif" width="32" height="32"/> | :zombiecat: |
+| <img src="custom_emoji/spooky_ytho.png" width="32" height="32"/> | :spooky_ytho: | <img src="custom_emoji/chuys.png" width="32" height="32"/> | :chuys: | <img src="custom_emoji/kentucky.png" width="32" height="32"/> | :kentucky: |
+| <img src="custom_emoji/build_success.png" width="32" height="32"/> | :build_success: | <img src="custom_emoji/programming.gif" width="32" height="32"/> | :programming: | <img src="custom_emoji/downvote.png" width="32" height="32"/> | :downvote: |
+| <img src="custom_emoji/wut.png" width="32" height="32"/> | :wut: | <img src="custom_emoji/squidward.jpg" width="32" height="32"/> | :squidward: | <img src="custom_emoji/thumbsupparrot.gif" width="32" height="32"/> | :thumbsupparrot: |
+| <img src="custom_emoji/merged.png" width="32" height="32"/> | :merged: | <img src="custom_emoji/vaultboy.png" width="32" height="32"/> | :vaultboy: | <img src="custom_emoji/bandit.png" width="32" height="32"/> | :bandit: |
+| <img src="custom_emoji/nice.jpg" width="32" height="32"/> | :nice: | <img src="custom_emoji/cowboy.jpg" width="32" height="32"/> | :cowboy: | <img src="custom_emoji/mtg-green.png" width="32" height="32"/> | :mtg-green: |
+| <img src="custom_emoji/party_trash_dove.gif" width="32" height="32"/> | :party_trash_dove: | <img src="custom_emoji/spooky_skelinton.png" width="32" height="32"/> | :spooky_skelinton: | <img src="custom_emoji/samsung_cat.png" width="32" height="32"/> | :samsung_cat: |
+| <img src="custom_emoji/raging.gif" width="32" height="32"/> | :raging: | <img src="custom_emoji/tpope.jpg" width="32" height="32"/> | :tpope: | <img src="custom_emoji/dolan.png" width="32" height="32"/> | :dolan: |
+| <img src="custom_emoji/false.jpg" width="32" height="32"/> | :false: | <img src="custom_emoji/la_croix.png" width="32" height="32"/> | :la_croix: | <img src="custom_emoji/deadhorse.gif" width="32" height="32"/> | :deadhorse: |
+| <img src="custom_emoji/viking.jpg" width="32" height="32"/> | :viking: | <img src="custom_emoji/flinstones.jpg" width="32" height="32"/> | :flinstones: | <img src="custom_emoji/icanhaz.png" width="32" height="32"/> | :icanhaz: |
+| <img src="custom_emoji/texas.png" width="32" height="32"/> | :texas: | <img src="custom_emoji/giveenergy.png" width="32" height="32"/> | :giveenergy: | <img src="custom_emoji/orly.jpg" width="32" height="32"/> | :orly: |
+| <img src="custom_emoji/litten.png" width="32" height="32"/> | :litten: | <img src="custom_emoji/geass.gif" width="32" height="32"/> | :geass: | <img src="custom_emoji/this-is-fine.png" width="32" height="32"/> | :this-is-fine: |
+| <img src="custom_emoji/facepalm.png" width="32" height="32"/> | :facepalm: | <img src="custom_emoji/vinyl.png" width="32" height="32"/> | :vinyl: | <img src="custom_emoji/triforce.png" width="32" height="32"/> | :triforce: |
+| <img src="custom_emoji/parrotdad.gif" width="32" height="32"/> | :parrotdad: | <img src="custom_emoji/scumbagk8s.png" width="32" height="32"/> | :scumbagk8s: | <img src="custom_emoji/twitch_r6.png" width="32" height="32"/> | :twitch_r6: |
+| <img src="custom_emoji/fatherchristmas.png" width="32" height="32"/> | :fatherchristmas: | <img src="custom_emoji/skypecool.gif" width="32" height="32"/> | :skypecool: | <img src="custom_emoji/playstation.png" width="32" height="32"/> | :playstation: |
+| <img src="custom_emoji/pistachio.jpg" width="32" height="32"/> | :pistachio: | <img src="custom_emoji/chuck_norris.jpg" width="32" height="32"/> | :chuck_norris: | <img src="custom_emoji/noodles.png" width="32" height="32"/> | :noodles: |
+| <img src="custom_emoji/cuba.png" width="32" height="32"/> | :cuba: | <img src="custom_emoji/no_cars.png" width="32" height="32"/> | :no_cars: | <img src="custom_emoji/drunk.gif" width="32" height="32"/> | :drunk: |
+| <img src="custom_emoji/party_carrot.gif" width="32" height="32"/> | :party_carrot: | <img src="custom_emoji/troll-exclamation.png" width="32" height="32"/> | :troll-exclamation: | <img src="custom_emoji/falcon.jpg" width="32" height="32"/> | :falcon: |
+| <img src="custom_emoji/science_parrot.gif" width="32" height="32"/> | :science_parrot: | <img src="custom_emoji/fuego.gif" width="32" height="32"/> | :fuego: | <img src="custom_emoji/waffle.jpg" width="32" height="32"/> | :waffle: |
+| <img src="custom_emoji/bartleby.gif" width="32" height="32"/> | :bartleby: | <img src="custom_emoji/totoro.gif" width="32" height="32"/> | :totoro: | <img src="custom_emoji/brah.png" width="32" height="32"/> | :brah: |
+| <img src="custom_emoji/shufflefurtherparrot.gif" width="32" height="32"/> | :shufflefurtherparrot: | <img src="custom_emoji/illume.png" width="32" height="32"/> | :illume: | <img src="custom_emoji/beercat.gif" width="32" height="32"/> | :beercat: |
+| <img src="custom_emoji/shh.jpg" width="32" height="32"/> | :shh: | <img src="custom_emoji/philosoraptor.png" width="32" height="32"/> | :philosoraptor: | <img src="custom_emoji/nonono.gif" width="32" height="32"/> | :nonono: |
+| <img src="custom_emoji/bacon.png" width="32" height="32"/> | :bacon: | <img src="custom_emoji/one_ring.jpg" width="32" height="32"/> | :one_ring: | <img src="custom_emoji/nice.png" width="32" height="32"/> | :nice: |
+| <img src="custom_emoji/postgres.png" width="32" height="32"/> | :postgres: | <img src="custom_emoji/mtg_r.png" width="32" height="32"/> | :mtg_r: | <img src="custom_emoji/glitter-rainbow1.gif" width="32" height="32"/> | :glitter-rainbow1: |
+| <img src="custom_emoji/scumbag_js.png" width="32" height="32"/> | :scumbag_js: | <img src="custom_emoji/hoot_me.png" width="32" height="32"/> | :hoot_me: | <img src="custom_emoji/bandit_r6.png" width="32" height="32"/> | :bandit_r6: |
+| <img src="custom_emoji/killmenow.png" width="32" height="32"/> | :killmenow: | <img src="custom_emoji/mtg-blue.png" width="32" height="32"/> | :mtg-blue: | <img src="custom_emoji/bib.png" width="32" height="32"/> | :bib: |
+| <img src="custom_emoji/darkside.png" width="32" height="32"/> | :darkside: | <img src="custom_emoji/al-arabiyyah.png" width="32" height="32"/> | :al-arabiyyah: | <img src="custom_emoji/brain_small.jpg" width="32" height="32"/> | :brain_small: |
+| <img src="custom_emoji/sauron.jpg" width="32" height="32"/> | :sauron: | <img src="custom_emoji/atom.gif" width="32" height="32"/> | :atom: | <img src="custom_emoji/spacedolphinparty.gif" width="32" height="32"/> | :spacedolphinparty: |
+| <img src="custom_emoji/same.png" width="32" height="32"/> | :same: | <img src="custom_emoji/goof.jpg" width="32" height="32"/> | :goof: | <img src="custom_emoji/party_charmander.gif" width="32" height="32"/> | :party_charmander: |
+| <img src="custom_emoji/stevesone.png" width="32" height="32"/> | :stevesone: | <img src="custom_emoji/feelsgood.png" width="32" height="32"/> | :feelsgood: | <img src="custom_emoji/i-lied.png" width="32" height="32"/> | :i-lied: |
+| <img src="custom_emoji/nesswalk.gif" width="32" height="32"/> | :nesswalk: | <img src="custom_emoji/linkrip.png" width="32" height="32"/> | :linkrip: | <img src="custom_emoji/one-does-not-simply.png" width="32" height="32"/> | :one-does-not-simply: |
+| <img src="custom_emoji/mac.png" width="32" height="32"/> | :mac: | <img src="custom_emoji/dew.gif" width="32" height="32"/> | :dew: | <img src="custom_emoji/youearnedit.png" width="32" height="32"/> | :youearnedit: |
+| <img src="custom_emoji/dealwithitparrot.gif" width="32" height="32"/> | :dealwithitparrot: | <img src="custom_emoji/cowmoon.gif" width="32" height="32"/> | :cowmoon: | <img src="custom_emoji/gitcat.png" width="32" height="32"/> | :gitcat: |
+| <img src="custom_emoji/slack_call.png" width="32" height="32"/> | :slack_call: | <img src="custom_emoji/rtj1.png" width="32" height="32"/> | :rtj1: | <img src="custom_emoji/goku.gif" width="32" height="32"/> | :goku: |
+| <img src="custom_emoji/sandwich.jpg" width="32" height="32"/> | :sandwich: | <img src="custom_emoji/kevin.gif" width="32" height="32"/> | :kevin: | <img src="custom_emoji/itsarly.jpg" width="32" height="32"/> | :itsarly: |
+| <img src="custom_emoji/portal-orange.png" width="32" height="32"/> | :portal-orange: | <img src="custom_emoji/sleepy_parrot.gif" width="32" height="32"/> | :sleepy_parrot: | <img src="custom_emoji/bagheera.png" width="32" height="32"/> | :bagheera: |
+| <img src="custom_emoji/troll-dance.gif" width="32" height="32"/> | :troll-dance: | <img src="custom_emoji/l-boogie.jpg" width="32" height="32"/> | :l-boogie: | <img src="custom_emoji/nyan_parrot.gif" width="32" height="32"/> | :nyan_parrot: |
+| <img src="custom_emoji/falafel.jpg" width="32" height="32"/> | :falafel: | <img src="custom_emoji/dragonite.gif" width="32" height="32"/> | :dragonite: | <img src="custom_emoji/salute.png" width="32" height="32"/> | :salute: |
+| <img src="custom_emoji/corgi.png" width="32" height="32"/> | :corgi: | <img src="custom_emoji/thumbsupobama.jpg" width="32" height="32"/> | :thumbsupobama: | <img src="custom_emoji/wat.jpg" width="32" height="32"/> | :wat: |
+| <img src="custom_emoji/crossed.gif" width="32" height="32"/> | :crossed: | <img src="custom_emoji/react.png" width="32" height="32"/> | :react: | <img src="custom_emoji/carl.png" width="32" height="32"/> | :carl: |
+| <img src="custom_emoji/browsers.png" width="32" height="32"/> | :browsers: | <img src="custom_emoji/sadparrot.gif" width="32" height="32"/> | :sadparrot: | <img src="custom_emoji/rest_in_peace.png" width="32" height="32"/> | :rest_in_peace: |
+| <img src="custom_emoji/chico.png" width="32" height="32"/> | :chico: | <img src="custom_emoji/rubber_duck.png" width="32" height="32"/> | :rubber_duck: | <img src="custom_emoji/kube.png" width="32" height="32"/> | :kube: |
+| <img src="custom_emoji/morty.png" width="32" height="32"/> | :morty: | <img src="custom_emoji/haha-funny.png" width="32" height="32"/> | :haha-funny: | <img src="custom_emoji/bobdobbs.jpg" width="32" height="32"/> | :bobdobbs: |
+| <img src="custom_emoji/firesquirrel.jpg" width="32" height="32"/> | :firesquirrel: | <img src="custom_emoji/not-bad.png" width="32" height="32"/> | :not-bad: | <img src="custom_emoji/linux.png" width="32" height="32"/> | :linux: |
+| <img src="custom_emoji/peace_be_your_journey.gif" width="32" height="32"/> | :peace_be_your_journey: | <img src="custom_emoji/mario_pipe.png" width="32" height="32"/> | :mario_pipe: | <img src="custom_emoji/spacedolphin.gif" width="32" height="32"/> | :spacedolphin: |
+| <img src="custom_emoji/hurtrealbad.png" width="32" height="32"/> | :hurtrealbad: | <img src="custom_emoji/elasticsearch.png" width="32" height="32"/> | :elasticsearch: | <img src="custom_emoji/arbys.png" width="32" height="32"/> | :arbys: |
+| <img src="custom_emoji/upvote_parrot.gif" width="32" height="32"/> | :upvote_parrot: | <img src="custom_emoji/sneeze.jpg" width="32" height="32"/> | :sneeze: | <img src="custom_emoji/hellsport.png" width="32" height="32"/> | :hellsport: |
+| <img src="custom_emoji/yoga.jpg" width="32" height="32"/> | :yoga: | <img src="custom_emoji/litaf.png" width="32" height="32"/> | :litaf: | <img src="custom_emoji/do_it.jpg" width="32" height="32"/> | :do_it: |
+| <img src="custom_emoji/chefdog.png" width="32" height="32"/> | :chefdog: | <img src="custom_emoji/n64.gif" width="32" height="32"/> | :n64: | <img src="custom_emoji/cage.gif" width="32" height="32"/> | :cage: |
+| <img src="custom_emoji/cabbage.jpg" width="32" height="32"/> | :cabbage: | <img src="custom_emoji/giftcat.gif" width="32" height="32"/> | :giftcat: | <img src="custom_emoji/tthelmet2.png" width="32" height="32"/> | :tthelmet2: |
+| <img src="custom_emoji/scumbag_auth0.png" width="32" height="32"/> | :scumbag_auth0: | <img src="custom_emoji/binoculars.png" width="32" height="32"/> | :binoculars: | <img src="custom_emoji/spongebob.png" width="32" height="32"/> | :spongebob: |
+| <img src="custom_emoji/super_hot_fire.gif" width="32" height="32"/> | :super_hot_fire: | <img src="custom_emoji/derp.png" width="32" height="32"/> | :derp: | <img src="custom_emoji/reasons.png" width="32" height="32"/> | :reasons: |
+| <img src="custom_emoji/eevee.gif" width="32" height="32"/> | :eevee: | <img src="custom_emoji/feels-good.png" width="32" height="32"/> | :feels-good: | <img src="custom_emoji/thumbsuprambo.jpg" width="32" height="32"/> | :thumbsuprambo: |
+| <img src="custom_emoji/nesspj.gif" width="32" height="32"/> | :nesspj: | <img src="custom_emoji/n00b.png" width="32" height="32"/> | :n00b: | <img src="custom_emoji/costanza.png" width="32" height="32"/> | :costanza: |
+| <img src="custom_emoji/diglett.gif" width="32" height="32"/> | :diglett: | <img src="custom_emoji/ffwiz.png" width="32" height="32"/> | :ffwiz: | <img src="custom_emoji/bastion.png" width="32" height="32"/> | :bastion: |
+| <img src="custom_emoji/upvote.png" width="32" height="32"/> | :upvote: | <img src="custom_emoji/like.png" width="32" height="32"/> | :like: | <img src="custom_emoji/sad_panda.png" width="32" height="32"/> | :sad_panda: |
+| <img src="custom_emoji/nods.gif" width="32" height="32"/> | :nods: | <img src="custom_emoji/allthejorbs.png" width="32" height="32"/> | :allthejorbs: | <img src="custom_emoji/anitear.png" width="32" height="32"/> | :anitear: |
+| <img src="custom_emoji/party_try_not_to_cry.gif" width="32" height="32"/> | :party_try_not_to_cry: | <img src="custom_emoji/tvbinge.gif" width="32" height="32"/> | :tvbinge: | <img src="custom_emoji/blitz_r6.png" width="32" height="32"/> | :blitz_r6: |
+| <img src="custom_emoji/grace-of-space.png" width="32" height="32"/> | :grace-of-space: | <img src="custom_emoji/rage2.png" width="32" height="32"/> | :rage2: | <img src="custom_emoji/scumbag_css.png" width="32" height="32"/> | :scumbag_css: |
+| <img src="custom_emoji/whichwich.png" width="32" height="32"/> | :whichwich: | <img src="custom_emoji/beet.jpg" width="32" height="32"/> | :beet: | <img src="custom_emoji/goldblum.png" width="32" height="32"/> | :goldblum: |
+| <img src="custom_emoji/doit.gif" width="32" height="32"/> | :doit: | <img src="custom_emoji/middleparrot.gif" width="32" height="32"/> | :middleparrot: | <img src="custom_emoji/illuminati.png" width="32" height="32"/> | :illuminati: |
+| <img src="custom_emoji/aussieparrot.gif" width="32" height="32"/> | :aussieparrot: | <img src="custom_emoji/cubone.gif" width="32" height="32"/> | :cubone: | <img src="custom_emoji/tacotrail.gif" width="32" height="32"/> | :tacotrail: |
+| <img src="custom_emoji/skype_champagne.gif" width="32" height="32"/> | :skype_champagne: | <img src="custom_emoji/topo_chico.png" width="32" height="32"/> | :topo_chico: | <img src="custom_emoji/propane.png" width="32" height="32"/> | :propane: |
+| <img src="custom_emoji/devops.png" width="32" height="32"/> | :devops: | <img src="custom_emoji/tt2.png" width="32" height="32"/> | :tt2: | <img src="custom_emoji/ganymede.png" width="32" height="32"/> | :ganymede: |
+| <img src="custom_emoji/pride_parrot.gif" width="32" height="32"/> | :pride_parrot: | <img src="custom_emoji/partycat.gif" width="32" height="32"/> | :partycat: | <img src="custom_emoji/dull.gif" width="32" height="32"/> | :dull: |
+| <img src="custom_emoji/girbody.jpg" width="32" height="32"/> | :girbody: | <img src="custom_emoji/vaca_aquatica.gif" width="32" height="32"/> | :vaca_aquatica: | <img src="custom_emoji/burb.jpg" width="32" height="32"/> | :burb: |
+| <img src="custom_emoji/ralpherz.png" width="32" height="32"/> | :ralpherz: | <img src="custom_emoji/kjump.gif" width="32" height="32"/> | :kjump: | <img src="custom_emoji/wfo_parrot.gif" width="32" height="32"/> | :wfo_parrot: |
+| <img src="custom_emoji/jira_bug.png" width="32" height="32"/> | :jira_bug: | <img src="custom_emoji/ou.png" width="32" height="32"/> | :ou: | <img src="custom_emoji/lol.jpg" width="32" height="32"/> | :lol: |
+| <img src="custom_emoji/sssss.png" width="32" height="32"/> | :sssss: | <img src="custom_emoji/party_rage_sad_panda.gif" width="32" height="32"/> | :party_rage_sad_panda: | <img src="custom_emoji/happening.gif" width="32" height="32"/> | :happening: |
+| <img src="custom_emoji/cap.gif" width="32" height="32"/> | :cap: | <img src="custom_emoji/civitas_feels_bad_man.jpg" width="32" height="32"/> | :civitas_feels_bad_man: | <img src="custom_emoji/parrotwave6.gif" width="32" height="32"/> | :parrotwave6: |
+| <img src="custom_emoji/charmander.gif" width="32" height="32"/> | :charmander: | <img src="custom_emoji/radioactive.png" width="32" height="32"/> | :radioactive: | <img src="custom_emoji/rtj2.png" width="32" height="32"/> | :rtj2: |
+| <img src="custom_emoji/batman.png" width="32" height="32"/> | :batman: | <img src="custom_emoji/jeff.gif" width="32" height="32"/> | :jeff: | <img src="custom_emoji/spock.png" width="32" height="32"/> | :spock: |
+| <img src="custom_emoji/troll-question.png" width="32" height="32"/> | :troll-question: | <img src="custom_emoji/barbs.jpg" width="32" height="32"/> | :barbs: | <img src="custom_emoji/notlikethis.png" width="32" height="32"/> | :notlikethis: |
+| <img src="custom_emoji/ufo.gif" width="32" height="32"/> | :ufo: | <img src="custom_emoji/elaine.jpg" width="32" height="32"/> | :elaine: | <img src="custom_emoji/failed.png" width="32" height="32"/> | :failed: |
+| <img src="custom_emoji/mtg-black.png" width="32" height="32"/> | :mtg-black: | <img src="custom_emoji/murica.jpg" width="32" height="32"/> | :murica: | <img src="custom_emoji/brbs.png" width="32" height="32"/> | :brbs: |
+| <img src="custom_emoji/moto2.png" width="32" height="32"/> | :moto2: | <img src="custom_emoji/finnadie.png" width="32" height="32"/> | :finnadie: | <img src="custom_emoji/brachiosaurus.png" width="32" height="32"/> | :brachiosaurus: |
+| <img src="custom_emoji/naan.png" width="32" height="32"/> | :naan: | <img src="custom_emoji/shufflepartyparrot.gif" width="32" height="32"/> | :shufflepartyparrot: | <img src="custom_emoji/sonogram_jesus.png" width="32" height="32"/> | :sonogram_jesus: |
+| <img src="custom_emoji/skype_nerd.gif" width="32" height="32"/> | :skype_nerd: | <img src="custom_emoji/nitrogen.png" width="32" height="32"/> | :nitrogen: | <img src="custom_emoji/drop_mic.jpg" width="32" height="32"/> | :drop_mic: |
+| <img src="custom_emoji/beard.jpg" width="32" height="32"/> | :beard: | <img src="custom_emoji/party_sad_panda1.gif" width="32" height="32"/> | :party_sad_panda1: | <img src="custom_emoji/brain_big.jpg" width="32" height="32"/> | :brain_big: |
+| <img src="custom_emoji/et.png" width="32" height="32"/> | :et: | <img src="custom_emoji/tired-spongebob.png" width="32" height="32"/> | :tired-spongebob: | <img src="custom_emoji/hotpocket.png" width="32" height="32"/> | :hotpocket: |
+| <img src="custom_emoji/bro.jpg" width="32" height="32"/> | :bro: | <img src="custom_emoji/jira.jpg" width="32" height="32"/> | :jira: | <img src="custom_emoji/hamburger_parrot.gif" width="32" height="32"/> | :hamburger_parrot: |
+| <img src="custom_emoji/fingerscrossed.png" width="32" height="32"/> | :fingerscrossed: | <img src="custom_emoji/glitch_crab.png" width="32" height="32"/> | :glitch_crab: | <img src="custom_emoji/reese.png" width="32" height="32"/> | :reese: |
+| <img src="custom_emoji/impossibru.png" width="32" height="32"/> | :impossibru: | <img src="custom_emoji/clapping.gif" width="32" height="32"/> | :clapping: | <img src="custom_emoji/aloe.jpg" width="32" height="32"/> | :aloe: |
+| <img src="custom_emoji/goose.gif" width="32" height="32"/> | :goose: | <img src="custom_emoji/doritos.png" width="32" height="32"/> | :doritos: | <img src="custom_emoji/kronos.jpg" width="32" height="32"/> | :kronos: |
+| <img src="custom_emoji/dba.png" width="32" height="32"/> | :dba: | <img src="custom_emoji/leftfist.png" width="32" height="32"/> | :leftfist: | <img src="custom_emoji/scumbag_spark.png" width="32" height="32"/> | :scumbag_spark: |
+| <img src="custom_emoji/waka_waka.png" width="32" height="32"/> | :waka_waka: | <img src="custom_emoji/alpaca.png" width="32" height="32"/> | :alpaca: | <img src="custom_emoji/castle_r6.png" width="32" height="32"/> | :castle_r6: |
+| <img src="custom_emoji/roflcopter.jpg" width="32" height="32"/> | :roflcopter: | <img src="custom_emoji/droppingcigarettes.png" width="32" height="32"/> | :droppingcigarettes: | <img src="custom_emoji/doot_cone.png" width="32" height="32"/> | :doot_cone: |
+| <img src="custom_emoji/which-is-nice.png" width="32" height="32"/> | :which-is-nice: | <img src="custom_emoji/tofu.jpg" width="32" height="32"/> | :tofu: | <img src="custom_emoji/rook_r6.png" width="32" height="32"/> | :rook_r6: |
+| <img src="custom_emoji/party_goat.gif" width="32" height="32"/> | :party_goat: | <img src="custom_emoji/giggle.gif" width="32" height="32"/> | :giggle: | <img src="custom_emoji/jacket.jpg" width="32" height="32"/> | :jacket: |
+| <img src="custom_emoji/corgi3.png" width="32" height="32"/> | :corgi3: | <img src="custom_emoji/flip_cup.jpg" width="32" height="32"/> | :flip_cup: | <img src="custom_emoji/me_gusta.png" width="32" height="32"/> | :me_gusta: |
+| <img src="custom_emoji/scumbag_aws.png" width="32" height="32"/> | :scumbag_aws: | <img src="custom_emoji/ohyou.jpg" width="32" height="32"/> | :ohyou: | <img src="custom_emoji/bork.jpg" width="32" height="32"/> | :bork: |
+| <img src="custom_emoji/ceds.png" width="32" height="32"/> | :ceds: | <img src="custom_emoji/arcanine.gif" width="32" height="32"/> | :arcanine: | <img src="custom_emoji/jeffwalk.gif" width="32" height="32"/> | :jeffwalk: |
+| <img src="custom_emoji/paulrevere.png" width="32" height="32"/> | :paulrevere: | <img src="custom_emoji/rainbow-drool.png" width="32" height="32"/> | :rainbow-drool: | <img src="custom_emoji/witness_protection_parrot.gif" width="32" height="32"/> | :witness_protection_parrot: |
+| <img src="custom_emoji/pkat.png" width="32" height="32"/> | :pkat: | <img src="custom_emoji/ohok.png" width="32" height="32"/> | :ohok: |
