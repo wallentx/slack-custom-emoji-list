@@ -1,8 +1,14 @@
 #!/bin/bash
 
-# Use this to resize images for slack
+IMAGE=$1
+OUTPUT=$2
 
-IN=$1
-OUT=$2
+if [[ ! $(command -v convert) ]]; then
+	echo "Need to install Imagemagick"
+fi
 
-convert $IN -resize 128x128\> $OUT
+# Uncomment for OSX
+# convert $IMAGE -resize 128x128^> $OUTPUT
+
+# Uncomment for Linux
+convert $IMAGE -resize 128x128\> $OUTPUT
